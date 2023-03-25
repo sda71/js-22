@@ -6,7 +6,9 @@
  * 'Такого кол-ва звезд нет'
  */
 
-// const stars = 1;
+// Standart else....if
+
+// const stars = 7;
 // let price;
 
 // if (stars === 1) {
@@ -20,43 +22,57 @@
 // } else if (stars === 5) {
 //   price = 120;
 // } else {
-//   console.log('Такого кол-ва звезд нет');
+//   console.log('Mistake nubber of stars!');
 // }
+// console.log(price);
+
+// Using SWITCH!!!!!!!! (switch - case - break - default)
+
+// const stars = 22;
+// let price;
 
 // switch (stars) {
 //   case 1:
 //     price = 20;
+//     console.log('* Hotel');
+//     console.log(`You price is ${price} credits.`);
 //     break;
-
 //   case 2:
 //     price = 30;
+//     console.log('** Hotel');
+//     console.log(`You price is ${price} credits.`);
 //     break;
-
 //   case 3:
 //     price = 50;
+//     console.log('*** Hotel');
+//     console.log(`You price is ${price} credits.`);
 //     break;
-
 //   case 4:
 //     price = 70;
+//     console.log('**** Hotel');
+//     console.log(`You price is ${price} credits.`);
 //     break;
-
 //   case 5:
 //     price = 120;
+//     console.log('***** Hotel');
+//     console.log(`You price is ${price} credits.`);
 //     break;
 
 //   default:
-//     console.log('Такого кол-ва звезд нет');
+//     console.log(
+//       `Are you crazy????? Where did you see ${stars}-th stars Hotel????`,
+//     );
 // }
-
 // console.log(price);
 
+// ----------------------------------------------------------------------------
 /*
  * Напиши скрипт выбора стоимости отеля по кол-ву звёзд.
  * 1,2 - 20$, 3,4 - 30$, 5 - 120$
  */
 
-// const stars = 1;
-// let price;
+const stars = 3;
+let price;
 
 // if (stars === 1 || stars === 2) {
 //   price = 20;
@@ -65,29 +81,39 @@
 // } else if (stars === 5) {
 //   price = 120;
 // } else {
-//   console.log('Такого кол-ва звезд нет');
+//   console.log(
+//     `Are you crazy????? Where did you see ${stars}-th stars Hotel????`,
+//   );
 // }
-
 // console.log(price);
+
+// AND NOW SWITCH!!!!!!!!! (WE CAN USE "||" also!!!!!)
 
 // switch (stars) {
 //   case 1:
 //   case 2:
 //     price = 20;
+//     console.log('* Hotel');
+//     console.log(`You price is ${price} credits.`);
 //     break;
-
 //   case 3:
 //   case 4:
 //     price = 30;
+//     console.log('** Hotel');
+//     console.log(`You price is ${price} credits.`);
 //     break;
-
 //   case 5:
 //     price = 120;
+//     console.log('*** Hotel');
+//     console.log(`You price is ${price} credits.`);
 //     break;
 
 //   default:
-//     console.log('Такого кол-ва звезд нет');
+//     console.log(
+//       `Are you crazy????? Where did you see ${stars}-th stars Hotel????`,
+//     );
 // }
+// console.log(price);
 
 /*
  * Напиши скрипт выбора опции доставки товара.
@@ -100,28 +126,24 @@
  * - 'Вам перезвонит менеджер'
  */
 
-//  1. сделать переменные
-const option = 1526;
-let message = '';
-
-// 2. сделать switch 1 2 3
-// 3. в каждом кейсе записать в message строку
-switch (option) {
-  case 1:
-    message = 'Вы сможете забрать товар завтра с 12:00 в нашем офисе';
-    break;
-
-  case 2:
-    message = 'Курьер доставит заказ завтра с 9:00 до 18:00';
-    break;
-
-  case 3:
-    message = 'Посылка будет отправлена сегодня';
-    break;
-
-  default:
-    message = 'Вам перезвонит менеджер';
-}
-
-// 4. сделать лог message
-console.log(message);
+// 1. сделать переменную
+// const option = 4;
+// let message = '';
+// // 2. сделать switch 1, 2, 3
+// // 3. в каждом case записать message
+// switch (option) {
+//     case 1:
+//     message = 'You can take your goods in our office tomorrow at 12:00.';
+//     break;
+//   case 1:
+//     message =
+//       'The courier will deliver your package tomorrow from 9:00 to 18:00.';
+//     break;
+//   case 1:
+//     message = 'Parcel will be send today.';
+//     break;
+//   default:
+//     message = 'The manager will call you back.';
+// }
+// // 4.  сделать лог message
+// console.log(message);
